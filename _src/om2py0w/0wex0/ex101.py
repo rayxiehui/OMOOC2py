@@ -1,3 +1,6 @@
+#!/usr/bin/env python 
+# -*- coding: cp936 -*- 
+
 from sys import argv
 script,filename = argv
 
@@ -14,5 +17,5 @@ txt.write("\n")
 print txt.read()
 txt.close()
 print "open again"
-txt2 = open('txt.txt','r+')
+txt2 = open('谢辉.txt','r+')
 print txt2.read()
