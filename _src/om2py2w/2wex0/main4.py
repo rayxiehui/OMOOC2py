@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+
 from Tkinter import *
 from sys import argv
 script,filename = argv
@@ -27,7 +28,7 @@ root = Tk()
 l = Label(root,text = "请写日志：")
 l.grid(row = 0,column = 0,sticky = W)
 
-e1 = Entry(root)
+e1 = Entry(root,background = 'red')
 e1.grid(row = 0,column=1,sticky = E)
 
 te = Text(root,width =50,height =10)
