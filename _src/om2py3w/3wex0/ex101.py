@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+#客户端
 import socket
 
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
 s.connect(('127.0.0.1',9999))
 

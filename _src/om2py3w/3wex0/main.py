@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+#服务端
 import time, socket, threading
 
 def tcplink(sock,addr):
