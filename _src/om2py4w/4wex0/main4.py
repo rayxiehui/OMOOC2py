@@ -2,10 +2,15 @@
 # -*- coding: UTF-8 -*-
 from bottle import get,post,request,run,template,route,static_file
 
-js_path = './static/assets'
-@route('/static/assets/<filename:re:.*\.css|.*\.js|.*\.png|.*\.jpg|.*\.gif>')
+js_path = './static/js/libs'
+@route('/static/js/libs/<filename:re:.*\.css|.*\.js|.*\.png|.*\.jpg|.*\.gif>')
 def server_static(filename):
     return static_file(filename,root = js_path) 
+
+js_path2 = './static/js/first/viewModel'
+@route('/static/js/first/viewModel/<filename:re:.*\.css|.*\.js|.*\.png|.*\.jpg|.*\.gif>')
+def server_static_two(filename):
+    return static_file(filename,root = js_path2)     
 
 @route("/response",method ="Post")   
 def log():  
