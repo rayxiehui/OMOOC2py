@@ -17,6 +17,7 @@
 	<a href="www.baidu">baidu</a>
 	%end
 </body>
-<script data-main = "/static/js/first/viewModel/login.js" src = "/static/js/libs/require.js"></script>
+<!-- 用require库中的方法引入所有的js文件 data-main 后面是文件地址 -->
+<script data-main = "/static/js/first/viewModel/login.js" src = "/static/js/libs/require.js"></script>  
 
 </html>
